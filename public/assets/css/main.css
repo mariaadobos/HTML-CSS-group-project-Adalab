@@ -340,6 +340,7 @@ body {
 }
 
 .footer__title {
+  font-family: "Open Sans", sans-serif;
   font-size: 0.875rem;
   color: #b8b8b9;
   text-align: center;
@@ -361,6 +362,7 @@ body {
 .footer__link {
   color: #54585a;
   line-height: 1.875rem;
+  text-decoration: none;
 }
 
 .footer__logo__image {

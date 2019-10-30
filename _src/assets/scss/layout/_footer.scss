@@ -8,6 +8,7 @@
     align-items: center;
 }
 .footer__title{
+    font-family:$fontOpen;
     font-size: 0.875rem;
     color: #b8b8b9;
     text-align: center;
@@ -17,7 +18,7 @@
     padding-left: 0px;
 }
 .footer__list li{
-    font-family: $fontOpen;
+    font-family:$fontOpen;
     font-weight: 600;
     font-size: 0.875rem;
     color: #54585a;
@@ -27,6 +28,7 @@
 .footer__link{
     color: #54585a;
     line-height: 1.875rem;
+    text-decoration: none;
 
 }
 .footer__logo__image{
