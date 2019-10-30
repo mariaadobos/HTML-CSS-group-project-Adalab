@@ -438,7 +438,7 @@ body {
 }
 
 .team-member__content__name {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1.25rem;
   color: #000;
   text-align: center;
@@ -596,11 +596,6 @@ input {
   color: darkslategray;
 }
 
-.email_address::-moz-placeholder {
-  font-size: 1rem;
-  color: darkslategray;
-}
-
 .email_address:-ms-input-placeholder {
   font-size: 1rem;
   color: darkslategray;
@@ -745,11 +740,6 @@ input {
     text-align: left;
   }
 
-  .about-us__title {
-    padding-top: 45px;
-    padding-bottom: 40px;
-  }
-
   .team-member {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -757,8 +747,13 @@ input {
   }
 
   .team-member__photo {
-    width: 220px;
-    height: 220px;
+    width: 210px;
+    height: 210px;
+  }
+
+  .about-us__title {
+    padding-top: 45px;
+    padding-bottom: 40px;
   }
 
   .left .team-member__photo {
@@ -779,6 +774,9 @@ input {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 
   .left .team-member__content {
