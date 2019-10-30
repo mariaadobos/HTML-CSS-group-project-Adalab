@@ -1,0 +1,45 @@
+.hero{
+    background-image: url(../images/hero-image.jpeg);
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 26.31rem;
+    width: 100%; 
+}
+.claim-box{
+    max-width: 90%;
+    height:5rem;
+    background-color: #ffffff; 
+    transform: translateY(40%);
+}
+.claim{
+    font-size: 1.125rem;
+    font-family: $fontOpen;
+    font-weight: 600;
+    color: #000000;
+    margin: 0.9375rem;
+    text-align: center;
+}
+@media all and (min-width:768px) {
+    .claim-box{
+        max-width: 58%;
+        opacity: 0.8;
+        position: absolute;
+        left: 50px;
+    }
+    .claim{
+        transform: translateY(-5%);
+        text-align:left;
+    }
+}
+@media all and (min-width: 1200px){
+    .claim-box{
+        max-width: 55%;
+        height: 90px;
+        padding-left: 40px
+    }
+    .claim{
+        font-size: 1.5rem;
+    }
+}

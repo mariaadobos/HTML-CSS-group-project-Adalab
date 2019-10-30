@@ -1,0 +1,123 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+}
+
+/* ##########STYLE CONTACT ##########*/
+.contact {
+    border: 5px solid #fabada;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+}
+.contact_title {
+    font-size: 1.5rem;
+    line-height: 1.88;
+    color: #099d8d;
+}
+.contact_text {
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: center;
+    padding: 5px;
+}
+.contact_text_style_1 {
+    font-size: 0.75rem;
+    padding-top: 10px;
+}
+.contact_text_style_2 {
+    font-size: 0.75rem;
+    color:#14d9c4;
+}
+.contact_form {
+    width: 100vw;
+    font-size: 0.875rem;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
+label {
+    font-size: 14px;
+    display: flex;
+}
+input {
+    font-size: 14px;
+    padding-left: 15px;
+    width: 90vw;
+    height: 45px;
+}
+.email_address::placeholder {
+    font-size: 1rem;
+    color: darkslategray;
+}
+.message {
+    width: 90vw;
+    height: 105px;
+    font-size: 0.875rem;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+.bottom_send {
+    background-color: #099d8d;
+    border-radius: 4px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 30px;
+}
+.bottom_send:hover {
+    background-color: white;
+    color: #099d8d;
+}
+
+
+    /* ##########STYLE CONTACT ##########*/
+    .contact {
+        width: 58vw;
+        border: 5px solid #fabada;
+        margin: auto;
+        padding: 0px;
+    }
+    .contact_form {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        width: 56vw;
+    }
+    .contact_form .message, label, input {
+        width: 56vw;
+    }
+
+    /* ##########STYLE CONTACT ##########*/
+    
+   
+@media all and (min-width: 1200px){
+    .contact_text {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    .contact_form_hijo {
+        width: 56vw;
+    }
+
+    .email_telephone {
+        display: flex;
+        justify-content: space-between;
+    }
+    .email {
+        width: 20vw;
+    }
+    .email_address {
+        width: 36vw;
+    }
+    .telephone {
+        width: 162px;
+    }
+    .bottom_send {
+        width: 335px;
+    }
+}

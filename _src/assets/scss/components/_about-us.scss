@@ -1,0 +1,102 @@
+.about-us__title{
+    font-family: $fontRubik;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: $generalColor;
+    text-align: center;
+    padding-top: 15px;
+}
+.team-member{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 45px;
+}
+.team-member__photo{
+    width: 180px;
+    height: 180px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    border: solid 5px rgba(0, 0, 0, 0.08);
+}
+.team-member__content__name{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.25rem;
+    color: #000;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.team-member__content__text{
+    font-family: $fontOpen;
+    font-size: 1rem;
+    color: #54585a;
+    text-align: center;
+}
+.team-member__content__social{
+    color: $generalColor;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.social-media-link{
+    color: $generalColor;
+}
+.social-media-link:hover{
+    background-color: #b8b8b9;
+}
+.fab, .fas{
+    margin-right: 5px;
+    margin-left: 5px;
+}
+@media all and (min-width:768px) {
+    .about-us__title{
+        padding-top: 45px;
+        padding-bottom: 40px;
+    }
+    .team-member{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 1fr;
+    }
+    .team-member__photo{
+        width: 220px;
+        height: 220px;
+    }
+    .left .team-member__photo{
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+    .right .team-member__photo{
+        grid-column: 5/7;
+        grid-row: 1/2;
+    }
+    .team-member__content{
+        display: flex;
+        flex-direction: column;
+    }
+    .left .team-member__content{
+        grid-column: 3/6;
+        grid-row: 1/2;
+        align-items: flex-start;
+    }
+    .right .team-member__content{
+        grid-column: 2/5;
+        grid-row: 1/2;
+        align-items: flex-end;
+    }
+    .left .team-member__content__text{
+        text-align: left;
+        width: 90%;
+    }
+    .right .team-member__content__text{
+        text-align: right;
+        width: 90%;
+    }
+}
+@media (min-width: 1200px){
+.team-member {
+    width: 100%;
+    }
+}

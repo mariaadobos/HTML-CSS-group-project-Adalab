@@ -1,0 +1,19 @@
+/*****Variables******/
+@import 'core/variables';
+
+/*****Vendors Externals CSS******/
+@import 'vendors/normalize';
+
+/*****Global design******/
+@import 'layout/base';
+@import 'layout/header';
+@import 'layout/footer';
+
+/*****Home******/
+@import 'components/hero';
+@import 'components/about-us';
+@import 'components/team';
+@import 'components/capacities';
+
+/*****Contact******/
+@import 'pages/contact';
