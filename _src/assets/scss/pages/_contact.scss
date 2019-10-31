@@ -54,6 +54,7 @@ input {
     padding-left: 15px;
     width: 90vw;
     height: 45px;
+    border: 1px solid rgb(228, 224, 224);
 }
 .email_address::placeholder {
     font-size: 1rem;
@@ -83,17 +84,17 @@ input {
     // /* ##########STYLE CONTACT ##########*/
     @media all and (min-width:768px) {
     .contact_text{
-        width: 56%;
+        width: 56vw;
         font-size: 1.40rem;
     }
     .contact_form {
         margin-top: 30px;
         display: flex;
         flex-direction: column;
-        width: 56%;
+        width: 56vw;
     }
     .contact_form .message, label, input {
-        width: 56%;
+        width: 56vw;
     }
     .bottom {
         display: flex;

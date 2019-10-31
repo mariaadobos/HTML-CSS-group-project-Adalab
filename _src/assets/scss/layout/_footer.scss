@@ -29,6 +29,9 @@
     color: #54585a;
     line-height: 1.875rem;
     text-decoration: none;
+        &:hover{
+            color: $generalColor;
+        }
 
 }
 .footer__logo__image{

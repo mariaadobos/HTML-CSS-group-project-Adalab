@@ -375,6 +375,10 @@ body {
   text-decoration: none;
 }
 
+.footer__link:hover {
+  color: #099d8d;
+}
+
 .footer__logo__image {
   width: 115.9px;
   height: 45px;
@@ -511,6 +515,7 @@ body {
 .capacities__title {
   font-family: "Rubik", sans-serif;
   font-size: 1.375rem;
+  font-weight: 500;
   color: #099d8d;
   text-align: center;
 }/*****Contact******/.main {
@@ -593,6 +598,7 @@ input {
   padding-left: 15px;
   width: 90vw;
   height: 45px;
+  border: 1px solid #e4e0e0;
 }
 
 .email_address::-webkit-input-placeholder {
@@ -805,7 +811,7 @@ input {
   }
 
   .contact_text {
-    width: 56%;
+    width: 56vw;
     font-size: 1.40rem;
   }
 
@@ -818,11 +824,11 @@ input {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    width: 56%;
+    width: 56vw;
   }
 
   .contact_form .message,label,input {
-    width: 56%;
+    width: 56vw;
   }
 
   .bottom {
