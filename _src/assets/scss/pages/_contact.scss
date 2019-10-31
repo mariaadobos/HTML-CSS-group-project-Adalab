@@ -12,11 +12,13 @@
     align-items: center;
     width: 100%;
 }
+
 .contact_title {
     font-family: $fontRubik;
     font-size: 1.5rem;
     line-height: 1.88;
-    color: #099d8d;
+    color: $generalColor;
+    margin-top: 50px;
 }
 .contact_text {
     font-size: 1rem;
@@ -67,29 +69,31 @@ input {
 .bottom_send {
     background-color: $generalColor;
     border-radius: 4px;
-    color: white;
+    color: $basicColor;
     font-size: 1rem;
     font-weight: 600;
     font-family: $fontOpen;
     margin-top: 30px;
+    margin-bottom: 45px;
 }
 .bottom_send:hover {
-    background-color: white;
+    background-color: $basicColor;
     color: $generalColor;
 }
     // /* ##########STYLE CONTACT ##########*/
     @media all and (min-width:768px) {
     .contact_text{
-        width: 56vw;
+        width: 56%;
+        font-size: 1.40rem;
     }
     .contact_form {
         margin-top: 30px;
         display: flex;
         flex-direction: column;
-        width: 56vw;
+        width: 56%;
     }
     .contact_form .message, label, input {
-        width: 56vw;
+        width: 56%;
     }
     .bottom {
         display: flex;

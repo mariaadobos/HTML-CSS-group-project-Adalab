@@ -6,13 +6,13 @@
     }
 }
 .team__title{
-    font-family: 'Rubik', sans-serif;
+    font-family: $fontRubik;
     font-size: 1.5rem;
-    color: #14d9c4;
+    color: $titleColor;
     text-align: center;
 }
 .text{
-    font-family: 'Open Sans', sans-serif;
+    font-family: $fontOpen;
     font-size: 1rem;  
     line-height: 1.5rem;  
     color: #54585a;

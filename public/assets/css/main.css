@@ -486,14 +486,14 @@ body {
 }
 
 .team__title {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 1.5rem;
   color: #14d9c4;
   text-align: center;
 }
 
 .text {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1rem;
   line-height: 1.5rem;
   color: #54585a;
@@ -544,6 +544,7 @@ body {
   font-size: 1.5rem;
   line-height: 1.88;
   color: #099d8d;
+  margin-top: 50px;
 }
 
 .contact_text {
@@ -625,15 +626,16 @@ input {
 .bottom_send {
   background-color: #099d8d;
   border-radius: 4px;
-  color: white;
+  color: #ffffff;
   font-size: 1rem;
   font-weight: 600;
   font-family: "Open Sans", sans-serif;
   margin-top: 30px;
+  margin-bottom: 45px;
 }
 
 .bottom_send:hover {
-  background-color: white;
+  background-color: #ffffff;
   color: #099d8d;
 }/* ##########STYLE CONTACT ##########*/@media all and (min-width: 768px) {
   .wrapper {
@@ -803,7 +805,8 @@ input {
   }
 
   .contact_text {
-    width: 56vw;
+    width: 56%;
+    font-size: 1.40rem;
   }
 
   .contact_form {
@@ -815,11 +818,11 @@ input {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    width: 56vw;
+    width: 56%;
   }
 
   .contact_form .message,label,input {
-    width: 56vw;
+    width: 56%;
   }
 
   .bottom {
