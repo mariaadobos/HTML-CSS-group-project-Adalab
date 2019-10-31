@@ -524,9 +524,8 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 100vw;
+  width: 100%;
 }/* ##########STYLE CONTACT ##########*/.contact {
-  border: 5px solid #fabada;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -537,10 +536,11 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 100vw;
+  width: 100%;
 }
 
 .contact_title {
+  font-family: "Rubik", sans-serif;
   font-size: 1.5rem;
   line-height: 1.88;
   color: #099d8d;
@@ -550,6 +550,7 @@ body {
   font-size: 1rem;
   line-height: 1.5;
   text-align: center;
+  font-family: "Open Sans", sans-serif;
   padding: 5px;
 }
 
@@ -564,7 +565,7 @@ body {
 }
 
 .contact_form {
-  width: 100vw;
+  width: 100%;
   font-size: 0.875rem;
   line-height: 2;
   display: -webkit-box;
@@ -578,6 +579,7 @@ body {
 }
 
 label {
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -585,6 +587,7 @@ label {
 }
 
 input {
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   padding-left: 15px;
   width: 90vw;
@@ -625,33 +628,13 @@ input {
   color: white;
   font-size: 1rem;
   font-weight: 600;
+  font-family: "Open Sans", sans-serif;
   margin-top: 30px;
 }
 
 .bottom_send:hover {
   background-color: white;
   color: #099d8d;
-}/* ##########STYLE CONTACT ##########*/.contact {
-  width: 58vw;
-  border: 5px solid #fabada;
-  margin: auto;
-  padding: 0px;
-}
-
-.contact_form {
-  margin-top: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 56vw;
-}
-
-.contact_form .message,label,input {
-  width: 56vw;
 }/* ##########STYLE CONTACT ##########*/@media all and (min-width: 768px) {
   .wrapper {
     max-width: 1200px;
@@ -817,6 +800,42 @@ input {
 
   .capacities__container {
     width: 50%;
+  }
+
+  .contact_text {
+    width: 56vw;
+  }
+
+  .contact_form {
+    margin-top: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 56vw;
+  }
+
+  .contact_form .message,label,input {
+    width: 56vw;
+  }
+
+  .bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+  }
+
+  .bottom_send {
+    width: 200px;
+    height: 45px;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
   }
 }
 

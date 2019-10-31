@@ -2,18 +2,18 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100vw;
+    width: 100%;
 }
 
 /* ##########STYLE CONTACT ##########*/
 .contact {
-    border: 5px solid #fabada;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100vw;
+    width: 100%;
 }
 .contact_title {
+    font-family: $fontRubik;
     font-size: 1.5rem;
     line-height: 1.88;
     color: #099d8d;
@@ -22,6 +22,7 @@
     font-size: 1rem;
     line-height: 1.5;
     text-align: center;
+    font-family: $fontOpen;
     padding: 5px;
 }
 .contact_text_style_1 {
@@ -30,10 +31,10 @@
 }
 .contact_text_style_2 {
     font-size: 0.75rem;
-    color:#14d9c4;
+    color: $titleColor;
 }
 .contact_form {
-    width: 100vw;
+    width: 100%;
     font-size: 0.875rem;
     line-height: 2;
     display: flex;
@@ -41,10 +42,12 @@
     border: none;
 }
 label {
+    font-family: $fontOpen;
     font-size: 14px;
     display: flex;
 }
 input {
+    font-family: $fontOpen;
     font-size: 14px;
     padding-left: 15px;
     width: 90vw;
@@ -62,25 +65,22 @@ input {
     padding-top: 15px;
 }
 .bottom_send {
-    background-color: #099d8d;
+    background-color: $generalColor;
     border-radius: 4px;
     color: white;
     font-size: 1rem;
     font-weight: 600;
+    font-family: $fontOpen;
     margin-top: 30px;
 }
 .bottom_send:hover {
     background-color: white;
-    color: #099d8d;
+    color: $generalColor;
 }
-
-
-    /* ##########STYLE CONTACT ##########*/
-    .contact {
-        width: 58vw;
-        border: 5px solid #fabada;
-        margin: auto;
-        padding: 0px;
+    // /* ##########STYLE CONTACT ##########*/
+    @media all and (min-width:768px) {
+    .contact_text{
+        width: 56vw;
     }
     .contact_form {
         margin-top: 30px;
@@ -91,7 +91,17 @@ input {
     .contact_form .message, label, input {
         width: 56vw;
     }
-
+    .bottom {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .bottom_send {
+        width: 200px;
+        height: 45px;
+        align-self: flex-end;
+    }
+}
+    
     /* ##########STYLE CONTACT ##########*/
     
    
