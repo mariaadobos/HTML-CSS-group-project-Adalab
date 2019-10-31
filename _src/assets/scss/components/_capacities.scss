@@ -1,5 +1,5 @@
 .capacities{
-    background-color: #b8b8b9;
+    background-color: rgba(184,184,185,0.2);
     padding-top: 30px;
     padding-bottom: 30px;
 
@@ -17,5 +17,10 @@
     }
     .capacities__container{
         width: 50%;
+    }
+}
+@media all and (min-width:1200px){
+    .capacities .capacities__container{
+        width: 100%;
     }
 }
