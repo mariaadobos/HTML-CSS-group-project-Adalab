@@ -652,6 +652,21 @@ input {
     background-color: #099d8d;
   }
 
+  a {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-name: intro;
+    animation-name: intro;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+  }
+
   .header__wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -919,6 +934,38 @@ input {
 @media (min-width: 1200px) {
   .team-member {
     width: 100%;
+  }
+}
+
+@-webkit-keyframes intro {
+  from {
+    -webkit-transform: traslatex(20%);
+    transform: traslatex(20%);
+    width: 0%;
+    opacity: 0.1;
+  }
+
+  to {
+    -webkit-transform: traslatex(100%);
+    transform: traslatex(100%);
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+@keyframes intro {
+  from {
+    -webkit-transform: traslatex(20%);
+    transform: traslatex(20%);
+    width: 0%;
+    opacity: 0.1;
+  }
+
+  to {
+    -webkit-transform: traslatex(100%);
+    transform: traslatex(100%);
+    width: 100%;
+    opacity: 1;
   }
 }
 
