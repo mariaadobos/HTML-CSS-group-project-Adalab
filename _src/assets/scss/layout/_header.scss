@@ -4,6 +4,7 @@
     font-family: $fontRubik;
     font-weight: 500;
     z-index: 2;
+    opacity:0.95;
     @media all and (min-width:768px){
         background-color: $generalColor;
     }
@@ -13,16 +14,7 @@
     display:flex;
     justify-content: center;
 }
-.header__title{
-    font-size: 1rem;
-    color:$basicColor;
-    line-height: 3.75rem;
-    background-color: $generalColor;
-    height: 3.75rem;
-    margin: 0px;
-    text-align: center;
-    opacity: 0.9;    
-}
+
 .header__list{
     background-color: $titleColor;
     list-style: none;

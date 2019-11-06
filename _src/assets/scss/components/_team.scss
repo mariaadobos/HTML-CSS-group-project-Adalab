@@ -1,6 +1,6 @@
 .team{
-    padding-top: 55px;
-    padding-bottom: 15px;
+    padding-top: 70px;
+    padding-bottom: 30px;
     @media all and (min-width: 1200px){
         width: 601px;
     }
@@ -8,7 +8,8 @@
 .team__title{
     font-family: $fontRubik;
     font-size: 1.5rem;
-    color: $titleColor;
+    color:$generalColor;
+    font-weight: 500;
     text-align: center;
 }
 .text{
