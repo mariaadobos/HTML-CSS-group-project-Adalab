@@ -374,7 +374,7 @@ body {
   height: 45px;
   background-color: #ffffff;
 }/*****Home******/.hero {
-  background-image: url(../images/hero-image.jpeg);
+  background-image: url(../images/hero-image.jpg);
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
