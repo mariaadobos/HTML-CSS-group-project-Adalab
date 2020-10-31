@@ -1,45 +1,108 @@
-.hero{
+.hero {
+    position: relative;
     background-image: url(../images/hero-image.jpg);
+    background-position: 18%;
     background-size: cover;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    height: 26.31rem;
+    height: 100vh;
     width: 100%; 
-}
-.claim-box{
-    max-width: 90%;
-    height:5rem;
-    background-color: #ffffff; 
-    transform: translateY(40%);
-}
-.claim{
-    font-size: 1.125rem;
-    font-family: $fontOpen;
-    font-weight: 600;
-    color: #000000;
-    margin: 0.9375rem;
-    text-align: center;
-}
-@media all and (min-width:768px) {
-    .claim-box{
-        max-width: 58%;
-        opacity: 0.8;
-        position: absolute;
-        left: 50px;
+
+    &__wrapper {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
     }
-    .claim{
-        transform: translateY(-5%);
-        text-align:left;
+
+    &__claim-box {
+        display: none;
+        // max-width: 90%;
+        // height:5rem;
+        // background-color: #ffffff; 
+        // transform: translateY(40%);
+    }
+
+    &__title{
+        font-family: $fontRubik;
+        font-size: 2rem;
+        color:$generalColor;
+        font-weight: 500;
+        text-align: center;
+        margin-bottom: 0;
+        text-shadow: 5px 10px 5px black;
+    }
+
+    &__team {
+        background: cornsilk;
+        opacity: 0.8;
+        width: 90%;
+    }
+
+    &__text {
+        font-family: $fontOpen;
+        font-size: 0.8rem;  
+        line-height: 1.2rem;  
+        // color: #54585a;
+        text-align: center;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    &__button {
+        width: 50%;
+        height: 50px;
+        border-radius: 15px;
+        border: none;
+        color: white;
+        background-color: chocolate;
+    }
+}
+
+// .claim{
+//     font-size: 1.125rem;
+//     font-family: $fontOpen;
+//     font-weight: 600;
+//     color: #000000;
+//     margin: 0.9375rem;
+//     text-align: center;
+// }
+@media all and (min-width:768px) {
+    .hero {
+        display: flex;
+        justify-content: center;
+
+        &__wrapper {
+            width: 80%;
+        }
+
+        &__title {
+            font-size: 3rem;
+        }
+
+        &__button {
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+
+        &__text {
+            line-height: 1.5rem;  
+        }
+
+        &__claim-box {
+            display: block;
+            opacity: 0.8;
+            padding: 0.5rem 1rem;
+        }
+
+        &__claim{
+            color: white;
+            text-align: left;
+        }
     }
 }
 @media all and (min-width: 1200px){
-    .claim-box{
-        max-width: 55%;
-        height: 90px;
-        padding-left: 40px
-    }
-    .claim{
-        font-size: 1.5rem;
+    .hero__wrapper {
+        width: 70%;
     }
 }

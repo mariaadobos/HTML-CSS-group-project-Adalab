@@ -1,16 +1,13 @@
 .team{
     padding: 70px 25px 30px 25px;
+    background-color: bisque;
+    opacity: 0.8;
+    width: auto;
     @media all and (min-width: 1200px){
         width: 601px;
     }
 }
-.team__title{
-    font-family: $fontRubik;
-    font-size: 1.5rem;
-    color:$generalColor;
-    font-weight: 500;
-    text-align: center;
-}
+
 .text{
     font-family: $fontOpen;
     font-size: 1rem;  
