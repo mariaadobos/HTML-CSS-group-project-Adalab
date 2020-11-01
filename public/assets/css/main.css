@@ -1,4 +1,4 @@
-/*****Variables******//*****Vendors Externals CSS******//*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css *//* Document
+/*****Variables******//*****Functions******//*****Vendors Externals CSS******//*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css *//* Document
    ========================================================================== *//**
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
@@ -226,6 +226,7 @@ sup {
 
 body {
   font-family: "Open Sans", sans-serif;
+  line-height: 1.5;
 }
 
 .header {
@@ -297,27 +298,26 @@ body {
 
 .footer__title {
   font-family: "Open Sans", sans-serif;
-  font-size: 0.875rem;
+  font-size: 1rem;
   color: #b8b8b9;
   text-align: center;
 }
 
 .footer__list {
-  padding-left: 0px;
+  margin: 0;
 }
 
-.footer__list li {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 600;
-  font-size: 0.875rem;
-  color: #54585a;
+.footer__list > li {
   list-style: none;
   text-align: center;
 }
 
 .footer__link {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
   color: #54585a;
-  line-height: 1.875rem;
+  line-height: 1.8;
   text-decoration: none;
 }
 
@@ -325,8 +325,8 @@ body {
   color: #099d8d;
 }
 
-.footer__logo__image {
-  width: 115.9px;
+.footer__logoImage {
+  width: 116px;
   height: 45px;
   background-color: #ffffff;
 }/*****Home******/.hero {
@@ -355,10 +355,6 @@ body {
   justify-content: space-evenly;
 }
 
-.hero__claim-box {
-  display: none;
-}
-
 .hero__title {
   font-family: "Rubik", sans-serif;
   font-size: 2rem;
@@ -370,24 +366,27 @@ body {
 }
 
 .hero__team {
-  background: cornsilk;
-  opacity: 0.8;
+  background-color: #b8b8b9;
   width: 90%;
 }
 
 .hero__text {
   font-family: "Open Sans", sans-serif;
-  font-size: 0.8rem;
-  line-height: 1.2rem;
+  font-size: 1rem;
   text-align: center;
   padding-left: 15px;
   padding-right: 15px;
 }
 
+.hero__text--large {
+  display: none;
+}
+
 .hero__button {
   width: 50%;
   height: 50px;
-  border-radius: 15px;
+  border-radius: 20px;
+  font-weight: 600;
   border: none;
   color: white;
   background-color: chocolate;
@@ -395,8 +394,7 @@ body {
 
 .about-us {
   width: 100%;
-  padding-top: 30px;
-  padding-bottom: 20px;
+  padding: 20px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -474,25 +472,7 @@ body {
 }
 
 .fab,.fas {
-  margin-right: 5px;
-  margin-left: 5px;
-}
-
-.team {
-  padding: 70px 25px 30px 25px;
-  background-color: bisque;
-  opacity: 0.8;
-  width: auto;
-}
-
-.text {
-  font-family: "Open Sans", sans-serif;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  color: #54585a;
-  text-align: center;
-  padding-left: 15px;
-  padding-right: 15px;
+  margin: 0 5px;
 }
 
 .capacities {
@@ -502,9 +482,16 @@ body {
 
 .capacities__title {
   font-family: "Rubik", sans-serif;
-  font-size: 1.375rem;
+  font-size: 1.4rem;
   font-weight: 500;
   color: #099d8d;
+  text-align: center;
+}
+
+.capacities__text {
+  font-family: "Rubik", sans-serif;
+  font-size: 1rem;
+  color: #54585a;
   text-align: center;
 }/*****Contact******/.main {
   display: -webkit-box;
@@ -655,6 +642,7 @@ input {
     -ms-flex-pack: start;
     justify-content: flex-start;
     background: none;
+    height: 70px;
   }
 
   .header__button {
@@ -708,7 +696,15 @@ input {
   }
 
   .header__link {
-    font-size: 1rem;
+    font-size: 1.2rem;
+  }
+
+  .footer {
+    padding: 2.4rem 1rem;
+  }
+
+  .footer__link {
+    font-size: 1.2rem;
   }
 
   .hero {
@@ -726,6 +722,26 @@ input {
 
   .hero__title {
     font-size: 3rem;
+    margin-top: 0;
+  }
+
+  .hero__team {
+    padding: 1rem;
+  }
+
+  .hero__text {
+    font-size: 1.2rem;
+  }
+
+  .hero__text--large {
+    display: block;
+  }
+
+  .hero__button {
+    width: 33%;
+    height: 60px;
+    cursor: pointer;
+    font-size: 1.2rem;
   }
 
   .hero__button:hover {
@@ -733,24 +749,9 @@ input {
     transform: scale(1.05);
   }
 
-  .hero__text {
-    line-height: 1.5rem;
-  }
-
-  .hero__claim-box {
-    display: block;
-    opacity: 0.8;
-    padding: 0.5rem 1rem;
-  }
-
-  .hero__claim {
-    color: white;
-    text-align: left;
-  }
-
   .about-us__title {
-    padding-top: 45px;
-    padding-bottom: 40px;
+    font-size: 1.7rem;
+    margin-bottom: 30px;
   }
 
   .team-member {
@@ -761,21 +762,24 @@ input {
     -ms-flex-align: center;
     align-items: center;
     grid-template-rows: 1fr;
+    grid-gap: 1rem;
   }
 
   .team-member__photo {
-    width: 210px;
-    height: 210px;
+    width: 250px;
+    height: 250px;
   }
 
   .team-member__photo--left {
     grid-column: 1/4;
     grid-row: 1/2;
+    margin-right: 25px;
   }
 
   .team-member__photo--right {
     grid-column: 5/8;
     grid-row: 1/2;
+    margin-left: 25px;
   }
 
   .team-member__content {
@@ -807,6 +811,14 @@ input {
     align-items: flex-end;
   }
 
+  .team-member__contentName {
+    font-size: 1.3rem;
+  }
+
+  .team-member__contentText {
+    font-size: 1.2rem;
+  }
+
   .team-member__contentText--left {
     text-align: left;
     width: 90%;
@@ -815,6 +827,11 @@ input {
   .team-member__contentText--right {
     text-align: right;
     width: 90%;
+  }
+
+  .fab,.fas {
+    font-size: 1.2rem;
+    margin: 0 10px;
   }
 
   .capacities {
@@ -842,13 +859,21 @@ input {
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
   }
 
   .capacities__container > div {
-    width: 50%;
+    width: 45%;
+  }
+
+  .capacities__title {
+    font-size: 1.5rem;
+  }
+
+  .capacities_text {
+    font-size: 1.2rem;
   }
 
   .contact_text {
@@ -894,6 +919,15 @@ input {
     width: 70%;
   }
 
+  .hero__title {
+    font-size: 4rem;
+  }
+
+  .about-us__title {
+    font-size: 2rem;
+    margin-bottom: 70px;
+  }
+
   .team-member {
     width: 70%;
   }
@@ -903,30 +937,20 @@ input {
     height: 300px;
   }
 
-  .team {
-    width: 601px;
-  }
-
-  .team-member {
-    width: 60%;
-  }
-
-  .team-member.right {
-    -ms-flex-item-align: end;
-    align-self: flex-end;
-  }
-
-  .team-member__photo {
-    width: 280px;
-    height: 280px;
-  }
-
   .capacities {
     height: 400px;
   }
 
   .capacities__container {
     width: 70%;
+  }
+
+  .capacities__title {
+    font-size: 1.7rem;
+  }
+
+  .capacities__text {
+    font-size: 1.3rem;
   }
 
   .contact_text {

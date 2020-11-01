@@ -4,6 +4,7 @@ html{
 
 body{
     font-family:$fontOpen;
+    line-height: 1.5;
 }
 
 .wrapper {
@@ -14,18 +15,3 @@ body{
         align-items: center;
     }
 }
-
-// .rectangle{
-//     display: flex;
-//     flex-direction: row;
-//     justify-content: center;
-//     position: relative;
-// }
-// .rectangle__1{
-//     width: 30px;
-//     height: 30px;
-//     background-color: #ffffff;
-//     transform: rotate(45deg);
-//     position: absolute;
-//     top: -15px;
-// }

@@ -1,6 +1,9 @@
 /*****Variables******/
 @import 'core/variables';
 
+/*****Functions******/
+@import 'core/functions';
+
 /*****Vendors Externals CSS******/
 @import 'vendors/normalize';
 
@@ -12,7 +15,6 @@
 /*****Home******/
 @import 'components/hero';
 @import 'components/about-us';
-@import 'components/team';
 @import 'components/capacities';
 
 /*****Contact******/

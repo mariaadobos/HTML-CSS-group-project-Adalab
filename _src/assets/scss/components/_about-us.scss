@@ -1,7 +1,6 @@
 .about-us {
     width: 100%;
-    padding-top:30px;
-    padding-bottom:20px;
+    padding: 20px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -64,15 +63,14 @@
     }
 }
 .fab, .fas{
-    margin-right: 5px;
-    margin-left: 5px;
+    margin: 0 5px;
 }
 
 @media all and (min-width:768px) {
     .about-us {
         &__title {
-            padding-top: 45px;
-            padding-bottom: 40px;
+            font-size: 1.7rem;
+            margin-bottom: 30px;
         }
     }
 
@@ -82,19 +80,22 @@
         grid-template-columns: repeat(7, 1fr);
         align-items: center;
         grid-template-rows: 1fr;
+        grid-gap: 1rem;
 
         &__photo {
-            width: 210px;
-            height: 210px;
+            width: 250px;
+            height: 250px;
 
             &--left {
                 grid-column: 1/4;
                 grid-row: 1/2;
+                margin-right: 25px;
             }
 
             &--right {
                 grid-column: 5/8;
                 grid-row: 1/2;
+                margin-left: 25px;
             }
         }
 
@@ -116,7 +117,12 @@
             }
         }
 
+        &__contentName {
+            font-size: 1.3rem;
+        }
+
         &__contentText {
+            font-size: 1.2rem;
             &--left {
                 text-align: left;
                 width: 90%;
@@ -128,8 +134,18 @@
             }
         }
     }
+    .fab, .fas{
+        font-size: 1.2rem;
+        margin: 0 10px;
+    }
 }
 @media all and (min-width:1200px) {
+    .about-us {
+        &__title {
+            font-size: 2rem;
+            margin-bottom: 70px;
+        }
+    }
     .team-member {
         width: 70%;
 
