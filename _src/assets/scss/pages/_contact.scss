@@ -1,144 +1,144 @@
-.main{
+.main {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
 }
 
-/* ##########STYLE CONTACT ##########*/
 .contact {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-}
+    padding: 0 1rem;
 
-.contact_title {
-    font-family: $fontRubik;
-    font-size: 1.5rem;
-    font-weight: 500;
-    line-height: 1.88;
-    color: $generalColor;
-    margin-top: 50px;
-}
-.contact_text {
-    font-size: 1rem;
-    line-height: 1.5;
-    text-align: center;
-    font-family: $fontOpen;
-    padding: 5px;
-}
-.contact_text_style_1 {
-    font-size: 0.75rem;
-    padding-top: 10px;
-}
-.contact_text_style_2 {
-    font-size: 0.75rem;
-    color: $titleColor;
-}
-.contact_form {
-    width: 100%;
-    font-size: 0.875rem;
-    line-height: 2;
-    display: flex;
-    flex-direction: column;
-    border: none;
-}
-label {
-    font-family: $fontOpen;
-    font-size: 14px;
-    display: flex;
-}
-input {
-    font-family: $fontOpen;
-    font-size: 14px;
-    padding-left: 15px;
-    width: 90vw;
-    height: 45px;
-
-}
-.email_address::placeholder {
-    font-size: 1rem;
-    color: darkslategray;
-}
-.message {
-    width: 90vw;
-    height: 105px;
-    font-size: 0.875rem;
-    padding-left: 15px;
-    padding-top: 15px;
-    margin-top:7px;
-}
-.bottom_send {
-    background-color: $generalColor;
-    border-radius: 4px;
-    color: $basicColor;
-    font-size: 1rem;
-    font-weight: 600;
-    font-family: $fontOpen;
-    margin-top: 30px;
-    margin-bottom: 45px;
-}
-.bottom_send:hover {
-    background-color: $basicColor;
-    color: $generalColor;
-    border:2px solid $generalColor;
-    transition: color ease 2s, border ease 2s;
-
-}
-    // /* ##########STYLE CONTACT ##########*/
-    @media all and (min-width:768px) {
-    .contact_text{
-        width: 56vw;
-        font-size: 1.40rem;
+    &__title {
+        font-family: $fontRubik;
+        font-size: 1.5rem;
+        font-weight: 500;
+        line-height: 1.88;
+        color: $generalColor;
+        margin-top: 50px;
     }
-    .contact_form {
-        margin-top: 30px;
+
+    &__text {
+        font-size: 1rem;
+        line-height: 1.5;
+        text-align: center;
+        font-family: $fontOpen;
+        padding: 5px;
+    }
+
+    &__caption {
+        font-size: 0.75rem;
+        padding-top: 10px;
+    }
+
+    &__caption--styled {
+        color: $titleColor;
+    }
+
+    &__form {
+        width: 100%;
+        font-size: 1;
+        // line-height: 2;
         display: flex;
         flex-direction: column;
-        width: 56vw;
-    }
-    .contact_form .message, input {
-        width: 56vw;
-    }
-    
-    .bottom {
-        display: flex;
-        justify-content: flex-end;
-    }
-    .bottom_send {
-        width: 200px;
-        height: 45px;
-        align-self: flex-end;
+        border: none;
     }
 }
-    
-    /* ##########STYLE CONTACT ##########*/
-    
-   
-@media all and (min-width: 1200px){
-    .contact_text {
-        margin-left: 16px;
-        margin-right: 16px;
-    }
-    .contact_form_hijo {
-        width: 56vw;
+
+.field {
+    margin-bottom: 1rem;
+    &__label {
+        font-family: $fontOpen;
+        font-size: 14px;
+        display: flex;
     }
 
-    .email_telephone {
-        display: flex;
-        justify-content: space-between;
+    &__input {
+        font-family: $fontOpen;
+        font-size: 1rem;
+        padding-left: 15px;
+        width: 100%;
+        height: 45px;
     }
-    .email {
-        width: 20vw;
+
+    &__textarea {
+        height: 105px;
+        font-size: 1rem;
+        padding-left: 15px;
+        padding-top: 15px;
+        margin-top:7px;
     }
-    .email_address {
-        width: 36vw;
+}
+
+.button {
+    align-self: center;
+
+    &__visible {
+        height: 3rem;
+        width: 10rem;
+        background-color: $generalColor;
+        border-radius: 20px;
+        color: $basicColor;
+        font-size: 1rem;
+        font-weight: 600;
+        font-family: $fontOpen;
+        margin-top: 30px;
+        margin-bottom: 45px;
+        border: none;
+        cursor: pointer;
     }
-    .telephone {
-        width: 162px;
+}
+
+@media all and (min-width:768px) {
+    .contact {
+        &__title {
+            font-size: 2rem;
+        }
+
+        &__text {
+            width: 60%;
+            font-size: 1.40rem;
+        }
+
+        &__form {
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+        }
     }
-    .bottom_send {
-        width: 335px;
+    .field {
+        &__label {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+    }
+    .button {
+        &__visible {
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+    }
+}    
+   
+@media all and (min-width: 1200px){
+    .contact {
+        &__formFieldset {
+            display: flex;
+            justify-content: space-between;
+            .field {
+                width: 47%;
+            }
+        }
+    }
+    .field {
+        margin-bottom: 20px;
+    }
+    .button__visible {
+        width: 12rem;
     }
 }

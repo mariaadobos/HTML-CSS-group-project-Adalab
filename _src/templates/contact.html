@@ -14,38 +14,37 @@
 <body>
     <partial src="_header.html"/>
     <main class="main">
-        <section class="hero"></section>
-            <section class="contact">
-            <h2 class="contact_title">CONTACTO</h2>
-                <div class="contact_text">
-                    <p>Somos <strong>Digital Assembly</strong> y este es nuestro primer proyecto web. Si quieres saber más sobre nuestro equipo, no dudes en escribirnos.</p>
-                    <p class="contact_text_style_1">Todos los campos marcados con <span class="contact_text_style_2">*</span> son obligatorios.</p>
+        <partial src="_hero.html"/>
+        <section class="contact" id="contact">
+            <h2 class="contact__title">CONTACTO</h2>
+            <div class="contact__text">
+                <p>Somos <strong>Digital Assembly</strong> y este es nuestro primer proyecto web. Si quieres saber más sobre nuestro equipo, no dudes en escribirnos.</p>
+                <p class="contact__caption">Todos los campos marcados con <span class="contact__caption--styled">*</span> son obligatorios.</p>
+            </div>
+            <form class="contact__form" action="//formspree.io/xrgzywjk" method="POST" target="_blank"> 
+                <div class="field">
+                    <label class="field__label" for="fullname">Nombre completo<span class="contact__caption--styled"> *</span></label>
+                    <input class="field__input" placeholder="Nombre" id="fullname" type="text" name="fullname" required />
                 </div>
-                <fieldset class="contact_form">
-                    <form id="contact_form_general" action="//formspree.io/xrgzywjk" method="POST" target="_blank"> 
-                    <div class="contact_form_hijo" action="/signup" method="post">
-                        <label for="fullname">Nombre completo<span class="contact_text_style_2"> *</span></label>
-                        <input class="fullname" placeholder="Nombre..." id="fullname" type="text" name="fullname" required />
+                <div class="contact__formFieldset">
+                    <div class="field">
+                        <label class="field__label" for="email_address">Email<span class="contact__caption--styled"> *</span></label>
+                        <input class="field__input" placeholder="nombre.apellidos@mail.com" id="email_address" type="email" name="_replyto"
+                required />
                     </div>
-                    <div class="email_telephone">
-                        <div class="email">
-                            <label for="email_address">Email<span class="contact_text_style_2"> *</span></label>
-                            <input class="email_address" placeholder="nombre.apellidos@mail.com" id="email_address" type="email" name="_replyto"
-                    required />
-                        </div>
-                        <div class="telephone">
-                        <label for="telephone">Teléfono</label>
-                        <input class="telephone" placeholder="Ej: 123456789" id="telephone" type="tel" name="telephone" />
-                        </div>
-                    </div>                    
-                        <label  for="message">Mensaje<span class="contact_text_style_2"> *</span></label>
-                        <textarea class="message" id="message" name="message" rows="5" cols="34" placeholder="¿Que necesitas?"required></textarea>
-                        <div class="bottom">
-                        <input class="bottom_send" type="submit" value="ENVIAR" />
-                        <input type="hidden" name="_next" value="http://formspree.io/xrgzywjk"/>
+                    <div class="field">
+                        <label class="field__label" for="telephone">Teléfono</label>
+                        <input class="field__input" placeholder="Ej: 123456789" id="telephone" type="tel" name="telephone" />
                     </div>
-                    </form>
-                </fieldset>
+                </div>                    
+                <label class="field__label" for="message">Mensaje<span class="contact__caption--styled"> *</span></label>
+                <textarea class="field__textarea" id="message" name="message" rows="5" cols="34" placeholder="¿Que necesitas?"required></textarea>
+                <div class="button">
+                    <input class="button__visible" type="submit" value="ENVIAR" />
+                    <input type="hidden" name="_next" value="http://formspree.io/xrgzywjk"/>
+                </div>
+                </div>
+            </form>
         </section>
     </main>
     <partial src="_footer.html"/>

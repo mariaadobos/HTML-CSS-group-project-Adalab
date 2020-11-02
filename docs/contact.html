@@ -49,27 +49,27 @@
         <main class="main">
             <section class="hero"></section>
             <section class="contact">
-                 <h2 class="contact_title">CONTACTO</h2>
+                 <h2 class="contact__title">CONTACTO</h2>
 
-                <div class="contact_text">
+                <div class="contact__text">
                     <p>Somos <strong>Digital Assembly</strong> y este es nuestro primer proyecto
                         web. Si quieres saber más sobre nuestro equipo, no dudes en escribirnos.</p>
                     <p
-                    class="contact_text_style_1">Todos los campos marcados con <span class="contact_text_style_2">*</span> son
+                    class="contact__text--style1">Todos los campos marcados con <span class="contact__text--style2">*</span> son
                         obligatorios.</p>
                 </div>
-                <fieldset class="contact_form">
-                    <form id="contact_form_general" action="//formspree.io/xrgzywjk" method="POST"
+                <fieldset class="contact__form">
+                    <form id="contact__form_general" action="//formspree.io/xrgzywjk" method="POST"
                     target="_blank">
-                        <div class="contact_form_hijo" action="/signup" method="post">
-                            <label for="fullname">Nombre completo<span class="contact_text_style_2"> *</span>
+                        <div class="contact__form_hijo" action="/signup" method="post">
+                            <label for="fullname">Nombre completo<span class="contact__text--style2"> *</span>
                             </label>
                             <input class="fullname" placeholder="Nombre..." id="fullname" type="text"
                             name="fullname" required />
                         </div>
                         <div class="email_telephone">
                             <div class="email">
-                                <label for="email_address">Email<span class="contact_text_style_2"> *</span>
+                                <label for="email_address">Email<span class="contact__text--style2"> *</span>
                                 </label>
                                 <input class="email_address" placeholder="nombre.apellidos@mail.com" id="email_address"
                                 type="email" name="_replyto" required />
@@ -80,7 +80,7 @@
                                 type="tel" name="telephone" />
                             </div>
                         </div>
-                        <label for="message">Mensaje<span class="contact_text_style_2"> *</span>
+                        <label for="message">Mensaje<span class="contact__text--style2"> *</span>
                         </label>
                         <textarea class="message" id="message" name="message" rows="5" cols="34"
                         placeholder="¿Que necesitas?" required></textarea>
