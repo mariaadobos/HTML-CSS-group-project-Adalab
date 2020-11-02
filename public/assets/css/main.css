@@ -299,7 +299,7 @@ body {
 .footer__title {
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;
-  color: #b8b8b9;
+  color: #54585a;
   text-align: center;
 }
 
@@ -328,7 +328,6 @@ body {
 .footer__logoImage {
   width: 116px;
   height: 45px;
-  background-color: #ffffff;
 }/*****Home******/.hero {
   position: relative;
   background-image: url(../images/hero-image.jpg);
@@ -368,10 +367,11 @@ body {
 .hero__team {
   background-color: #b8b8b9;
   width: 90%;
+  border-radius: 5px;
 }
 
 .hero__text {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 1rem;
   text-align: center;
   padding-left: 15px;
@@ -388,8 +388,12 @@ body {
   border-radius: 20px;
   font-weight: 600;
   border: none;
-  color: white;
   background-color: chocolate;
+}
+
+.hero__button > a {
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .about-us {
@@ -714,6 +718,7 @@ body {
 
   .hero__text {
     font-size: 1.2rem;
+    line-height: 1.8;
   }
 
   .hero__text--large {
@@ -908,7 +913,7 @@ body {
   }
 
   .hero__text {
-    line-height: 1.8;
+    line-height: 2;
   }
 
   .about-us__title {

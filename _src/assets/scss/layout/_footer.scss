@@ -9,7 +9,7 @@
     &__title {
         font-family:$fontOpen;
         font-size: 1rem;
-        color: #b8b8b9;
+        color: $textGrey;
         text-align: center;
     }
 
@@ -26,7 +26,7 @@
         font-family: $fontOpen;
         font-weight: 600;
         font-size: 1rem;
-        color: #54585a;
+        color: $textGrey;
         line-height: 1.8;
         text-decoration: none;
             &:hover{
@@ -37,7 +37,6 @@
     &__logoImage{
         width: 116px;
         height: 45px;
-        background-color: #ffffff; 
     }
 }
 
